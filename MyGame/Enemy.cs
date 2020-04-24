@@ -11,17 +11,17 @@ namespace MyGame
 
         public Enemy(String name) // Construtor
         {
-            this.name = SetName(name);
+            SetName(name);
             health = 100;
             shield = 0;
         }
 
-        public Enemy(String name, float health, float shield)
+/*        public Enemy(String name, float health, float shield)
         {
             this.name = name;
             this.health = health;
             this.shield = shield;
-        }
+        } */
 
 
         public string GetName() => name;
@@ -49,6 +49,7 @@ namespace MyGame
                 if (health <0) health = 0;
             }
         }
+
         
 
     }
